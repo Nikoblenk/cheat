@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<body>
+
+    <button id="playButton">▶ Play</button>
+
+    <audio id="music">
+        <source src="Der Basilisk.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+
+    <script>
+        const playButton = document.getElementById("playButton");
+        const music = document.getElementById("music");
+
+        playButton.addEventListener("click", () => {
+            music.play();
+        });
+    </script>
+
+</body>
+</html>
