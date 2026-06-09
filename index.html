@@ -9,7 +9,7 @@
 
     <button id="playButton">▶ Play</button>
 
-    <audio id="music">
+    <audio id="music" loop>
         <source src="Der Basilisk.mp3" type="audio/mpeg">
         Your browser does not support audio playback.
     </audio>
@@ -18,7 +18,7 @@
         const playButton = document.getElementById("playButton");
         const music = document.getElementById("music");
 
-        // Default playback speed: 0.5x
+        // Play at half speed
         music.playbackRate = 0.5;
 
         playButton.addEventListener("click", () => {
