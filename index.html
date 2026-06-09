@@ -18,6 +18,9 @@
         const playButton = document.getElementById("playButton");
         const music = document.getElementById("music");
 
+        // Default playback speed: 0.5x
+        music.playbackRate = 0.5;
+
         playButton.addEventListener("click", () => {
             music.play();
         });
